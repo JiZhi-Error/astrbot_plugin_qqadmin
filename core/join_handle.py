@@ -303,7 +303,7 @@ class JoinHandle:
             if comment:
                 notice += f"\n{comment}"
             if approve_msg:
-                notice += f"\n\n{approve_msg}"
+                notice += f"\n{approve_msg}"
 
             group_config = self.db.get_group_snapshot(gid)
             if group_config.get("admin_audit", self.cfg.admin_audit):
